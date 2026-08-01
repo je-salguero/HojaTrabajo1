@@ -4,5 +4,5 @@ En este pequeño ejercicio puse en practica las etiquetas aprendidas en clase
 para realizar una pagina de viajes sobre Semuc Champey y sus actividades disponibles.
 Se utilizo el html anterior para poder agregarle las mejoras con css que el ingeniero nos mostro en clase
 se agregaron colores, mejoras al estilo de la tabla, entre otros.
-Link en Netlify  
+Link en Netlify ht2dw.netlify.app
 Desarrollado por José Salguero
