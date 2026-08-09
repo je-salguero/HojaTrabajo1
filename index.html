@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Excursión a Semuc Champey</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
@@ -12,78 +12,92 @@
     <ul>
         <li><a href="#descripcion">Descripción del lugar</a></li>
         <li><a href="#galeria">Galería de imágenes</a></li>
+        <li><a href="#cotizador">Cotizador de Viaje</a></li>
         <li><a href="#itinerario">Tabla de itinerarios</a></li>
         <li><a href="#actividades">Lista de actividades extra</a></li>
+        <li><a href="#reserva">Reserva tu espacio</a></li>
     </ul>
 
     <hr>
 
     <h2 id="descripcion">Descripción del lugar</h2>
-    <p>Semuc Champey es un paraíso natural ubicado en el municipio de Lanquín, Alta Verapaz. Es famoso por su espectacular puente natural de piedra caliza de unos 300 metros de largo, debajo del cual fluye el Río Cahabón. En la parte superior, se forman hermosas pozas escalonadas de aguas cristalinas y turquesas. Es el lugar perfecto para quienes buscan aventura y contacto directo con la naturaleza.</p>
+    <p>Semuc Champey es un paraíso natural ubicado en el municipio de Lanquín, Alta Verapaz...</p>
+    
+    <div class="seccion-interactiva" id="seccionTestimonios">
+        <h3>Opiniones de nuestros visitantes</h3>
+        <p id="contenedorTestimonios">Cargando testimonio...</p>
+    </div>
 
     <hr>
 
-    <h2 id="galeria">Galería de imágenes</h2>
-    <img src="https://www.airenomada.com/wp-content/uploads/2017/06/IMG_0478.jpg" alt="Pozas de Semuc Champey" width="250">
-    <img src="https://static-dm.barcelo.com/is/image/barcelo/donde-queda-semuc-champey-guatemala-mirador?&&fmt=webp-alpha&qlt=75&wid=1200&fit=crop,1" alt="Vista desde el mirador" width="250">
-    <img src="https://www.guatevalley.com/photo/photo_a1/1361/AKdPOjgbbQ8fdcUIV2d5.jpg" alt="Cuevas de K'anba" width="250">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEkv6L9DyK44ouUnWzLIV_c5J50ZDPQPh3p2Z90x5t5c-IoLK1kM_nhKg&s=10" alt="Río Cahabón" width="250">
+    <h2 id="galeria">Galería de imágenes (Haz clic para ampliar)</h2>
+    <img class="img-galeria" src="https://www.airenomada.com/wp-content/uploads/2017/06/IMG_0478.jpg" alt="Pozas de Semuc Champey" width="250">
+    <img class="img-galeria" src="https://static-dm.barcelo.com/is/image/barcelo/donde-queda-semuc-champey-guatemala-mirador?&&fmt=webp-alpha&qlt=75&wid=1200&fit=crop,1" alt="Vista desde el mirador" width="250">
+    <img class="img-galeria" src="https://www.guatevalley.com/photo/photo_a1/1361/AKdPOjgbbQ8fdcUIV2d5.jpg" alt="Cuevas de K'anba" width="250">
+    <img class="img-galeria" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEkv6L9DyK44ouUnWzLIV_c5J50ZDPQPh3p2Z90x5t5c-IoLK1kM_nhKg&s=10" alt="Río Cahabón" width="250">
+
+    <hr>
+
+    <h2 id="cotizador">Cotizador de Viaje</h2>
+    <div class="seccion-interactiva">
+        <form id="formCotizador">
+            <label for="numAsistentes">Número de asistentes:</label><br>
+            <input type="number" id="numAsistentes" min="1" value="1"><br><br>
+
+            <label for="tipoPaquete">Tipo de paquete:</label><br>
+            <select id="tipoPaquete">
+                <option value="350">Básico (Q350 por persona)</option>
+                <option value="500">Completo con hospedaje (Q500 por persona)</option>
+            </select><br><br>
+
+            <input type="checkbox" id="extras">
+            <label for="extras">Incluir transporte desde la capital (+Q150 por persona)</label><br><br>
+
+            <button type="button" id="btnCalcular">Calcular Total</button>
+        </form>
+        <h3 id="resultadoTotal"></h3>
+    </div>
 
     <hr>
 
     <h2 id="itinerario">Itinerario de la Excursión</h2>
     <table border="1" cellpadding="5">
         <thead>
-            <tr>
-                <th>Fecha</th>
-                <th>Horario</th>
-                <th>Actividad</th>
-                <th>Lugar</th>
-            </tr>
+            <tr><th>Fecha</th><th>Horario</th><th>Actividad</th><th>Lugar</th></tr>
         </thead>
         <tbody>
-            <tr>
-                <td>15 de Agosto</td>
-                <td>06:00 AM</td>
-                <td>Salida en bus</td>
-                <td>Ciudad Capital</td>
-            </tr>
-            <tr>
-                <td>15 de Agosto</td>
-                <td>02:00 PM</td>
-                <td>Llegada, almuerzo e instalación</td>
-                <td>Hostal en Lanquín</td>
-            </tr>
-            <tr>
-                <td>16 de Agosto</td>
-                <td>08:00 AM</td>
-                <td>Caminata intensa</td>
-                <td>Mirador de Semuc Champey</td>
-            </tr>
-            <tr>
-                <td>16 de Agosto</td>
-                <td>11:00 AM</td>
-                <td>Tiempo libre para nadar</td>
-                <td>Pozas principales</td>
-            </tr>
-            <tr>
-                <td>17 de Agosto</td>
-                <td>10:00 AM</td>
-                <td>Retorno</td>
-                <td>Hacia la Ciudad Capital</td>
-            </tr>
+            <tr><td>15 de Agosto</td><td>06:00 AM</td><td>Salida en bus</td><td>Ciudad Capital</td></tr>
+            <tr><td>15 de Agosto</td><td>02:00 PM</td><td>Llegada e instalación</td><td>Lanquín</td></tr>
         </tbody>
     </table>
 
     <hr>
 
     <h2 id="actividades">Otras Actividades para Realizar</h2>
-    <ul>
+
+    <input type="text" id="buscadorActividades" placeholder="Buscar actividad... (ej. Cuevas)">
+    <ul id="listaActividades">
         <li>Exploración de las Cuevas de K'anba con velas.</li>
         <li>Tubing (recorrido en dona inflable) por los rápidos del Río Cahabón.</li>
         <li>Senderismo por la selva tropical observando la flora y fauna local.</li>
         <li>Degustación de chocolate artesanal en el pueblo de Lanquín.</li>
     </ul>
+
+    <hr>
+
+    <h2 id="reserva">Reserva tu espacio</h2>
+    <div class="seccion-interactiva">
+        <form id="formReserva">
+            <label for="nombreReserva">Nombre completo:</label><br>
+            <input type="text" id="nombreReserva"><br><br>
+
+            <label for="personasReserva">Cantidad de personas:</label><br>
+            <input type="number" id="personasReserva" min="1"><br><br>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+        <h3 id="mensajeConfirmacion" class="oculto" style="color: #2e5939;"></h3>
+    </div>
 
     <br><br>
 
@@ -91,5 +105,12 @@
         <p>Desarrollado por: José Salguero</p>
     </footer>
 
+    <div id="modalGaleria" class="oculto">
+        <img id="imgModal" src="" alt="Imagen ampliada">
+        <p id="textoModal"></p>
+        <button id="cerrarModal">Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
