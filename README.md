@@ -1,6 +1,3 @@
-# HojaTrabajo1
-Hoja de trabajo 1 para desarrollo web
-En este pequeño ejercicio puse en practica las etiquetas aprendidas en clase
-para realizar una pagina de viajes sobre Semuc Champey y sus actividades disponibles.
-Link en Netlify  https://glittering-quokka-9c02f5.netlify.app/
+Para esta hoja de trabajo, se convirtió el sitio realizado anteriormente de Semuc Champey (el que tenía todo en HTML, CSS y JS normal) para pasarlo a React, ya no como un solo archivo de JS, sino separando cada parte en su propio componente.
+Link en Netlify: https://hdt4.netlify.app/
 Desarrollado por José Salguero
